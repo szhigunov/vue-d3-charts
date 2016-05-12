@@ -1,0 +1,49 @@
+.simple-nav {
+  display: inline-block;
+  margin: auto 5px;
+}
+.simple-nav:after {
+ content: "|";
+}
+.simple-nav:before {
+ content: "|";
+}
+#piechart {
+  padding: 10px;
+  background-color: #eee;
+}
+#histogram {
+  width: 400px;
+  height: 300px;
+}
+/* always present */
+.expand-transition {
+  transition: all .3s ease;
+  height: 330px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
